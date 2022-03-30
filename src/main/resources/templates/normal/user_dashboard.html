@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Flysquare</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="C:\Users\Divyanshu\Desktop\Flysquare\UI\style.css">
+        <link rel="icon" href="C:\Users\Divyanshu\Desktop\Flysquare\flysquare.ico">
+    </head>
+    <body>
+        <div class="background">
+            <nav class="navbar fill bg-light navbar-expand-lg sticky-top shift">
+                <div class="container">
+                    <a class="navbar-brand" href="C:\Users\Divyanshu\Desktop\Flysquare\UI\flysquare.html">
+                        <img src="C:\Users\Divyanshu\Desktop\Flysquare\Flysquare_Logo.png" width="90" height="50" alt="Flysquare">
+                    </a>
+                    <div>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                    <span class="navbar-toggler-icon toggle-button"></span>
+                    </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="collapse_target">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="drop_target" href="#">Destinations</a>
+                                <div class="dropdown-menu" aria-labelledby="drop_target">
+                                    <a class="dropdown-item" href="C:\Users\Divyanshu\Desktop\Flysquare\UI\maldives.html">Maldives</a>
+                                    <a class="dropdown-item" href="#">Bali</a>
+                                    <a class="dropdown-item" href="#">Mauritius</a>
+                                    <a class="dropdown-item" href="#">Seychelles</a>
+                                    <a class="dropdown-item" href="#">Sri Lanka</a>   
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> 
+            <div class="container m-auto d-flex flex-column">
+                <div class="row align-items-center justify-content-center vh-100 no-gutters">
+                    <div class="col-lg-8 col-md-6">
+                        <!-- <div class="frame">
+                        <img src="C:\Users\Divyanshu\Desktop\Flysquare\UI\Copy of Copy of Copy of Untitled.svg">
+                        </div> -->
+                        <video autoplay loop muted>
+                            <source src="C:\Users\Divyanshu\Desktop\Flysquare\maldives.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="form-container">
+                            <form action="" id="form">
+                                <h3>Please Sign In</h3>
+                                <class class="container">
+                                    <span class="icon">
+                                        <i class="fasfa-user"></i>
+                                    </span>
+                                    
+                                    <input type="text" placeholder="username"/>
+                                    <div class="container">
+                                        <span class="icon">
+                                            <i class="fasfa-at"></i>
+                                        </span>
+                                        <input type="email" placeholder="email"/>
+                                    </div>
+                                    <div class="container">
+                                        <span class="icon">
+                                            <i class="fasfa-lock"></i>
+                                        </span>
+                                        <input type="password" placeholder="password"/>
+                                    </div>
+                                    <p style="color: #fff;"><a class="hypers" href="">Forgot password</a></p>
+                                    <input type="submit" value="Sign  In">
+                                    <p style="color: #fff;">Don't have an account? &emsp; <a class="hypers" href="#popup2">Sign Up</a></p>
+                                </class>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!--<main class="form-signin">
+                            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+                            <form>
+                                <div class="form-group my-3 p-2">
+                                    <label for="inputEmail" class="visually-hidden">Email address</label>
+                                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+                                </div>
+                                <div class="form-group mb-2 p-2">
+                                    <label for="inputPassword" class="visually-hidden">Password</label>
+                                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                                </div>
+                                <div class="checkbox mb-3">
+                                    <label>
+                                        <input type="checkbox" value="remember-me"> Remember me
+                                    </label>
+                                </div>
+                                <p><a href="">Forgot password</a></p>
+                                <button class="mb-3 mt-1 w-100 btn btn-lg btn-light btn-outline-dark border : 1px solid" type="submit">Sign In</button>
+                                <p>Don't have an account? <a href="#popup2">Sign Up</a></p>
+                                <div id="popup2" class="overlay">
+                                    <div class="popup">
+                                        <div class="div1" style="background:#fff">
+                                            <a class="close" href="#">×</a>
+                                            <div class="content" id="quickenquire">
+                                                <h3 style="text-align:center">Sign Up</h3>
+                                                <form action="#">
+                                                    <label for="name">Full Name</label>
+                                                    <input type="text" id="name" name="name">
+                                                    <label for="age">Age</label>
+                                                    <input type="number" id="age" name="age">
+                                                    <label for="email">Email Id</label>
+                                                    <input type="email" id="email" name="email">
+                                                    <label for="password">Create Password</label>
+                                                    <input type="password" id="password" name="password">
+                                                    <label for="password2">Confirm Password</label>
+                                                    <input type="password" id="password2" name="password2">
+                                                    <input type="submit" value="Submit">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </main>   
+                    </div> -->
+                </div>
+            </div>
+            <div id="popup2" class="overlay">
+                <div class="popup">
+                    <div class="div1" style="background:#fff">
+                        <a class="close" href="#">×</a>
+                        <div class="content" id="quickenquire">
+                            <h3 style="text-align:center">Sign Up</h3>
+                            <form action="#">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name">
+                                <label for="age">Age</label>
+                                <input type="number" id="age" name="age">
+                                <label for="email">Email Id</label>
+                                <input type="email" id="email" name="email">
+                                <label for="password">Create Password</label>
+                                <input type="password" id="password" name="password">
+                                <label for="password2">Confirm Password</label>
+                                <input type="password" id="password2" name="password2">
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="feedback">
+                <a href="#popup1">Enquire Now</a>
+            </div>
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <div class="div1" style="background:#fff">
+                        <a class="close" href="#">×</a>
+                        <div class="content" id="quickenquire">
+                            <h3 style="text-align:center">Generate Query</h3>
+                            <form action="#">
+                                <label for="country">Country</label>
+                                    <select id="country" name="country">
+                                    <option value="australia">Maldives</option>
+                                    <option value="canada">Bali</option>
+                                    <option value="usa">Mauritius</option>
+                                    <option value="canada">Seychelles</option>
+                                    <option value="canada">Sri Lanka</option>
+                                    </select>
+                                <label for="meal-plan">Meal Plan</label>
+                                    <select id="meal-plan" name="meal-plan">
+                                        <option value="Bed & Breakfast">Bed & Breakfast</option>
+                                        <option value="Half Board">Half Board</option>
+                                        <option value="Full Board">Full Board</option>
+                                        <option value="All Inclusive">All Inclusive</option>
+                                    </select>
+                                <label for="nights">No of Nights</label>
+                                <input type="number" id="nights" name="nights"><br>
+                                <label for="email">Email Id</label>
+                                <input type="email" id="email" name="email">        
+                                <label for="contact">Contact No</label>
+                                <input type="number" id="contact" name="contact"><br>    
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                heloo this is footer<br>
+                
+            </p>
+            <!-- <div class="footer-area">
+                
+            
+            class="gradient-custom"
+            </div> -->
+            </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>   
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
+        </div>
+    </body>
+</html>
